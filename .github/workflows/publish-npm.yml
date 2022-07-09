@@ -1,0 +1,42 @@
+name: Publish library to NPM
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Retrieve npm cache (if any)
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: npm-packages
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.14.2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build SASS project
+        run: npm run build
+
+      - name: Publish library to NPM
+        id: publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+      - name: Display if NPM library version changes
+        if: steps.publish.outputs.type != 'none'
+        run: |
+          echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
