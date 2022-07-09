@@ -1,0 +1,9 @@
+@import "./variables";
+@import "./mixins";
+
+$enable-gradients: true;
+
+.rounded-bottom {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}

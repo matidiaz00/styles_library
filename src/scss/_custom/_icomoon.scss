@@ -1,0 +1,17 @@
+@import "./alquilando-icons";
+
+.alquilando-icon {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+    align-items: center;
+    > i {
+                      color: red;
+        &.invert    { transform: rotate(180deg); }
+        &.d-90      { transform: rotate(90deg); }
+        &.d-n90     { transform: rotate(-90deg); }
+        &:before    { color: unset !important; }
+    }
+}

@@ -1,0 +1,186 @@
+$alquilando-icons-font-path:  "/assets/fonts/alquilando-icons/" !default;
+$roboto-font-path:            "/assets/fonts/roboto/" !default;
+$roboto-font-family:          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$font-size-base:  1.125rem !default;
+
+$h1-font-size:    2.5rem !default;
+$h2-font-size:    1.75rem !default;
+$h3-font-size:    1.5rem !default;
+$h4-font-size:    1.375rem !default;
+$h5-font-size:    1.25rem !default;
+$h6-font-size:    1rem !default;
+$h7-font-size:    $font-size-base !default;
+
+$spacer: 1rem !default;
+
+$spacer-0: $spacer - $spacer !default;
+$spacer-1: $spacer - .75rem !default;
+$spacer-2: $spacer - .5rem !default;
+$spacer-3: $spacer !default;
+$spacer-4: $spacer + .5rem !default;
+$spacer-5: $spacer + .75rem !default;
+$spacer-6: $spacer + 2rem !default;
+
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: $spacer-0,
+    1: $spacer-1,
+    2: $spacer-2,
+    3: $spacer-3,
+    4: $spacer-4,
+    5: $spacer-5,
+    6: $spacer-6
+  ),
+  $spacers
+);
+
+$alquilando-black:    #000000 !default;
+$alquilando-white:    #ffffff !default;
+
+$alquilando-black-1:  #333333 !default;
+$alquilando-black-2:  #424242 !default;
+$alquilando-black-3:  #828282 !default;
+$alquilando-black-4:  #BDBDBD !default;
+$alquilando-black-5:  #E0E0E0 !default;
+$alquilando-black-6:  #F2F2F2 !default;
+
+$alquilando-blue-1:   #1A227E !default;
+$alquilando-blue-2:   #2F80ED !default;
+$alquilando-blue-3:   #2D9CDB !default;
+$alquilando-blue-4:   #42A5F5 !default;
+$alquilando-blue-5:   #56CCF2 !default;
+$alquilando-blue-6:   #82B1FF !default;
+$alquilando-blue-7:   #F8F9FC !default;
+$alquilando-blue-8:   #121659 !default;
+
+$alquilando-green-1:  #219653 !default;
+$alquilando-green-2:  #27AE60 !default;
+$alquilando-green-3:  #008D7B !default;
+$alquilando-green-4:  #00C8BB !default;
+$alquilando-green-5:  #73E372 !default;
+
+$alquilando-purple-1: #5C6BC0 !default;
+$alquilando-purple-2: #4527A0 !default;
+$alquilando-purple-3: #311A92 !default;
+$alquilando-purple-4: #651FFF !default;
+$alquilando-purple-5: #B388FF !default;
+
+$alquilando-red-1:    #EB5757 !default;
+$alquilando-red-2:    #FB8C01 !default;
+$alquilando-red-3:    #FCB74E !default;
+$alquilando-red-4:    #F2C94C !default;
+
+// News styles
+$alquilando-new-blue-1-first: #1A227E !default;
+$alquilando-new-blue-1-second: #121659 !default;
+
+$alquilando-new-light-blue-1-first: #4FC0E7 !default;
+$alquilando-new-light-blue-1-second: #3AADD9 !default;
+
+$alquilando-new-light-blue-2-first: #609BEB !default;
+$alquilando-new-light-blue-2-second: #4A89D9 !default;
+
+$alquilando-new-green-1-first: #46CDAC !default;
+$alquilando-new-green-1-second: #35BA9B !default;
+$alquilando-new-green-2-first: #46C169 !default;
+$alquilando-new-green-2-second: #3DA45A !default;
+
+$alquilando-new-brown-1-first: #E2B691 !default;
+$alquilando-new-brown-1-second: #D8A880 !default;
+
+$alquilando-new-yellow-1-first: #F5BA46 !default;
+$alquilando-new-yellow-1-second: #E8A82B !default;
+
+$alquilando-new-red-1-first: #F96C51 !default;
+$alquilando-new-red-1-second: #E7553E !default;
+$alquilando-new-red-2-first: #EB5463 !default;
+$alquilando-new-red-2-second: #D84452 !default;
+
+$alquilando-new-pink-1-first: #ED86BB !default;
+$alquilando-new-pink-1-second: #D66EAD !default;
+
+$alquilando-new-purple-1-first: #AC92EB !default;
+$alquilando-new-purple-1-second: #9478DC !default;
+
+$alquilando-new-black-1-first: #646C77 !default;
+$alquilando-new-black-1-second: #414852 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "alquilando-black":       $alquilando-black,
+    "alquilando-white":       $alquilando-white,
+
+    "alquilando-black-1":     $alquilando-black-1,
+    "alquilando-black-2":     $alquilando-black-2,
+    "alquilando-black-3":     $alquilando-black-3,
+    "alquilando-black-4":     $alquilando-black-4,
+    "alquilando-black-5":     $alquilando-black-5,
+    "alquilando-black-6":     $alquilando-black-6,
+
+    "alquilando-blue-1":      $alquilando-blue-1,
+    "alquilando-blue-2":      $alquilando-blue-2,
+    "alquilando-blue-3":      $alquilando-blue-3,
+    "alquilando-blue-4":      $alquilando-blue-4,
+    "alquilando-blue-5":      $alquilando-blue-5,
+    "alquilando-blue-6":      $alquilando-blue-6,
+    "alquilando-blue-7":      $alquilando-blue-7,
+    "alquilando-blue-8":      $alquilando-blue-8,
+
+    "alquilando-green-1":     $alquilando-green-1,
+    "alquilando-green-2":     $alquilando-green-2,
+    "alquilando-green-3":     $alquilando-green-3,
+    "alquilando-green-4":     $alquilando-green-4,
+    "alquilando-green-5":     $alquilando-green-5,
+
+    "alquilando-purple-1":    $alquilando-purple-1,
+    "alquilando-purple-2":    $alquilando-purple-2,
+    "alquilando-purple-3":    $alquilando-purple-3,
+    "alquilando-purple-4":    $alquilando-purple-4,
+    "alquilando-purple-5":    $alquilando-purple-5,
+
+    "alquilando-red-1":       $alquilando-red-1,
+    "alquilando-red-2":       $alquilando-red-2,
+    "alquilando-red-3":       $alquilando-red-3,
+    "alquilando-red-4":       $alquilando-red-4,
+
+    "alquilando-new-blue-1-first": $alquilando-new-blue-1-first,
+    "alquilando-new-blue-1-second": $alquilando-new-blue-1-second,
+    
+    "alquilando-new-light-blue-1-first": $alquilando-new-light-blue-1-first,
+    "alquilando-new-light-blue-1-second": $alquilando-new-light-blue-1-second,
+    
+    "alquilando-new-light-blue-2-first": $alquilando-new-light-blue-2-first,
+    "alquilando-new-light-blue-2-second": $alquilando-new-light-blue-2-second,
+    
+    "alquilando-new-green-1-first": $alquilando-new-green-1-first,
+    "alquilando-new-green-1-second": $alquilando-new-green-1-second,
+    "alquilando-new-green-2-first": $alquilando-new-green-2-first,
+    "alquilando-new-green-2-second": $alquilando-new-green-2-second,
+    
+    "alquilando-new-brown-1-first": $alquilando-new-brown-1-first,
+    "alquilando-new-brown-1-second": $alquilando-new-brown-1-second,
+    
+    "alquilando-new-yellow-1-first": $alquilando-new-yellow-1-first,
+    "alquilando-new-yellow-1-second": $alquilando-new-yellow-1-second,
+    
+    "alquilando-new-red-1-first": $alquilando-new-red-1-first,
+    "alquilando-new-red-1-second": $alquilando-new-red-1-second,
+    "alquilando-new-red-2-first": $alquilando-new-red-2-first,
+    "alquilando-new-red-2-second": $alquilando-new-red-2-second,
+    
+    "alquilando-new-pink-1-first": $alquilando-new-pink-1-first,
+    "alquilando-new-pink-1-second": $alquilando-new-pink-1-second,
+    
+    "alquilando-new-purple-1-first": $alquilando-new-purple-1-first,
+    "alquilando-new-purple-1-second": $alquilando-new-purple-1-second,
+    
+    "alquilando-new-black-1-first": $alquilando-new-black-1-first,
+    "alquilando-new-black-1-second": $alquilando-new-black-1-second,
+  ),
+  $theme-colors
+);
+
+$enable-gradients: true;
